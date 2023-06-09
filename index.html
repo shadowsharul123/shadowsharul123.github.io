@@ -1,0 +1,72 @@
+<html lang="en">
+    <details>
+        <summary></summary>
+        <nav class="menu">
+          <a href="index.html">BMI Calculator</a>
+          <a href="about_me.html">My Profile</a>
+        </nav>
+      </details>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">  
+        <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+        <label>
+            <input id="name-input" type="text" placeholder="Enter Your Name" required>
+        </label>
+        <label>
+            <input id="age-input" type="number" placeholder="Enter Your Age" required>
+        </label>
+        <label>
+            <select id="gender-input" required>
+                <option value="">Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </label>
+        <label>
+            <input id="h-input" type="number" placeholder="Enter Your Height in Centimeters" required>
+        </label>        
+        <label>
+            <input id="w-input" type="number" placeholder="Enter Your Weight in Kilograms" required>
+        </label>
+        <label>
+            <select id="status-input" required>
+                <option value="">Select Last Checked Status</option>
+                <option value="underweight">Underweight</option>
+                <option value="healthy">Healthy</option>
+                <option value="overweight">Overweight</option>
+                <option value="obese">Obese</option>
+            </select>
+        </label> 
+        <label>
+            <input id="email-input" type="email" placeholder="Enter Your Email Address" required>
+        </label>
+        <label>
+            <input id="phone-input" type="tel" placeholder="Enter Your Phone Number" required>
+        </label>        
+        <button onclick="Calculate()">Calculate BMI</button>
+            
+        <div class="bmi-value">
+            <h4>BMI Value: </h4>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="status" id="status-div">
+            <h4>Status: </h4>
+            <div id="bmi-status"></div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <p>This is the footer for my BMI calculator website built specifically for my ICT600 individual assignment. Thanks for coming here!</p>
+    </footer>
+
+</body>
+</html>
