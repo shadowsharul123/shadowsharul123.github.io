@@ -172,11 +172,12 @@ h3 {
     
 }
 .container > div{
+    background: #f7df07;
     padding: 5px;
     font-size: 15px;
     font-weight: bold;
     color: black;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 button{

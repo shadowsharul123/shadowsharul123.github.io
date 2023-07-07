@@ -28,7 +28,7 @@ function Calculate() {
     }
 
     // Validate the input values
-    if (isNaN(age) || isNaN(height) || isNaN(weight) || age <= 0 || height <= 0 || weight <= 0) {
+    if (isNaN(age) || isNaN(height) || isNaN(weight) || age <= 1 || height <= 0 || weight <= 0) {
         alert("Please enter valid values for age, height, and weight.");
         return;
     }
@@ -45,13 +45,13 @@ function Calculate() {
     if (!isNaN(result)) {
         bmiOutput.innerHTML = result.toFixed(2);
         if (result < 18.5) {
-            bmiStatus.innerHTML = "Underweight";
+            bmiStatus.innerHTML = "underweight. You need to eat more frequently, consume more protein, high energy foods like cheese, nuts, milk-based smoothies and dried fruit.";
         } else if (result < 25) {
-            bmiStatus.innerHTML = "healthy";
+            bmiStatus.innerHTML = "healthy, congratulation! Stay healthy and emphasizes fruits, vegetables, whole grains, and fat-free or low-fat milk and milk products.";
         } else if (result < 30) {
-            bmiStatus.innerHTML = "Overweight";
+            bmiStatus.innerHTML = "overweight. Please eat a balanced, calorie-controlled diet. You also need to take up activities such as fast walking or jogging (two-and-a-half to five hours) a week.";
         } else {
-            bmiStatus.innerHTML = "Obesity";
+            bmiStatus.innerHTML = "obesity. Please avoid situations where you know you may be tempted to overeat. Obese people may find it hard to do some exercises but you may try something simple like brisk walking and dancing";
         }
 
         // Show the BMI value and status
